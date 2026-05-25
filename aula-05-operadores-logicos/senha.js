@@ -1,24 +1,26 @@
-// Instrução para poder rodar
+// Rodar (Pacote para funcionar no terminal)
 // npm install prompt-sync
 
-// Importar módulo
-const prompt = require('prompt-sync')();
+// Importa para meu programa o pacote que vou usar
+const prompt = require('prompt-sync')()
 
-// Lógica 
-let nomeUsuario = prompt("Informe o nome do usuário: ");
-let senha = prompt("Informe a senha: ");
-console.log(""); // Linha em branco
+// Declarar variáveis
+let nomeUsuario = prompt("Informe o nome do usuário: ")
+let senha = prompt("Informe a senha: ")
+console.log("")
 
-// Referências
-let loginBanco = "Ignacio";
-let senhaBanco = "123";
+// Simulando dados referência (Normalmente seriam trazidos do BD)
+let loginBanco = "Ignacio"
+let senhaBanco = "123"
 
-// Condicional SE + E 
+// Lógica para definir se o usuário digitou os dados corretos
 if (nomeUsuario === loginBanco && senha === senhaBanco) {
-    console.log("Acesso autorizado!");
-} else {
-    console.log("Acesso negado!");
+    console.log("Acesso autorizado")
+} else{
+    console.log("Acesso negado!")
 }
+
+
 
 
 
